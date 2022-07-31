@@ -4,46 +4,75 @@ namespace ChallengesWithTestsMark8
 {
     public class ChallengesSet01
     {
-        public bool AreTwoNumbersTheSame(int num1, int num2)
+        using System;
         {
-            if(num1 == num2)
+            
+            public bool AreTwoNumbersTheSame(int number1, int number2)
             {
-                return true;
+                
+                if (number1 == number2)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
+
+
+            public double Subtract(double minuend, double subtrahend)
             {
-                return false;
+               
+                return minuend - subtrahend;
             }
-        }
 
-        public double Subtract(double minuend, double subtrahend)
-        {
-            throw new NotImplementedException();
-        }
 
-        public int Add(int number1, int number2)
-        {
-            throw new NotImplementedException();
-        }
+            public int Add(int number1, int number2)
 
-        public int GetSmallestNumber(int number1, int number2)
-        {
-            throw new NotImplementedException();
-        }
+            {
+                return number1 + number2;
 
-        public long Multiply(long factor1, long factor2)
-        {
-            throw new NotImplementedException();
-        }
+            }
+            public int GetSmallestNumber(int number1, int number2, int expected)
+            {
 
-        public string GetGreeting(string nameOfPerson)
-        {
-            throw new NotImplementedException();
-        }
+                if (number1 > number2)
+                {
+                    return number2;
 
-        public string GetHey()
-        {
-            throw new NotImplementedException();
+                }
+                else if (number2 > number1)
+                {
+                    return number1;
+                }
+
+                else
+                {
+                    return expected;
+                }
+            }
+
+
+            public long Multiply(long factor1, long factor2)
+            {
+                return factor1 * factor2;
+            }
+
+            public string GetGreeting(string personName)
+
+            {
+                return personName = "Tetyana";
+
+
+            }
+
+
+            public string GetHey()
+            {
+                return "Hey!";
+            }
         }
     }
-}
+
+kdkkd 

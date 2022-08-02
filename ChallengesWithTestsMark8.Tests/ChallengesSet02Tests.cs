@@ -105,13 +105,13 @@ namespace ChallengesWithTestsMark8.Tests
                             {
                                 //if (number <= 0)
                                 //{
-                                  //  return 0;
+                                //  return 0;
                                 //}
-                              //  else
-                               // {
+                                //  else
+                                // {
                                 //    return number / 2;
                                 //}
-                                long count = 0
+                                long count = 0;
                             for (long i = number; i >= 0; i--)
                                 {
                                     if (i % 2 ! == 0)

@@ -6,9 +6,9 @@ namespace ChallengesWithTestsMark8.Tests
     public class ChallengesSet02Tests
     {
         [Fact]
-        public bool CharacterIsALetter()
+        public bool CharacterIsALetter(char c)
         {
-            return CharacterIsALetter();
+            return char.IsLetter(c);
         }
 
         public bool CountOfElementsIsEven(string[] vals)

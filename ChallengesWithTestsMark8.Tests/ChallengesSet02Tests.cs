@@ -5,6 +5,7 @@ namespace ChallengesWithTestsMark8.Tests
 {
     public class ChallengesSet02Tests
     {
+
         [Fact]
         public bool CharacterIsALetter(char c)
         {
@@ -21,7 +22,8 @@ namespace ChallengesWithTestsMark8.Tests
         }
 
         public bool IsNumberEven(int number, bool expected)
-        { if (number % 2 == 0)
+        {
+            if (number % 2 == 0)
             {
                 return true;
             }
@@ -31,7 +33,8 @@ namespace ChallengesWithTestsMark8.Tests
             }
 
             public bool IsNumberOdd(int number, bool expected)
-            { if (number % 2 != 0)
+            {
+                if (number % 2 != 0)
                 {
                     return true;
                 }
@@ -50,7 +53,8 @@ namespace ChallengesWithTestsMark8.Tests
                 }
 
                 public int GetLengthOfShortestString(string str1, string str2, int expected)
-                { if (str1.Length < str2.Length)
+                {
+                    if (str1.Length < str2.Length)
                     {
                         return str1.Length;
                     }
@@ -112,9 +116,9 @@ namespace ChallengesWithTestsMark8.Tests
                                 //    return number / 2;
                                 //}
                                 long count = 0;
-                            for (long i = number; i >= 0; i--)
+                                for (long i = number; i >= 0; i--)
                                 {
-                                    if (i % 2 ! == 0)
+                                    if (i % 2! == 0)
                                     {
                                         count += i;
                                     }
@@ -128,4 +132,3 @@ namespace ChallengesWithTestsMark8.Tests
         }
     }
 }
-
